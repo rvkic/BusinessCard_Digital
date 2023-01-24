@@ -14,38 +14,19 @@ class homework extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              Row(
-                children: <Widget>[
-                  Container(
-                    margin: EdgeInsets.only(right: 45.0),
-                    width: 100.0,
-                    color: Colors.red,
-                  ),
-                ],
-              ),
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
               Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
+
                   Container(
-                    height: 100.0,
-                    width: 100.0,
-                    color: Colors.yellow,
-                  ),
-                  Container(
-                    height: 100.0,
-                    width: 100.0,
-                    color: Colors.green,
-                  ),
-                ],
-              ),
-              Row(
-                children: <Widget>[
-                  Container(
-                    margin: EdgeInsets.only(left: 45.0),
-                    width: 100.0,
-                    color: Colors.blue,
+                    padding: EdgeInsets.only(top: 250.0),
+                    child: CircleAvatar(
+                      backgroundImage:
+                      AssetImage('Images/Avatar.png'),
+                      radius: 50.0,
+                    ),
                   ),
                 ],
               ),
